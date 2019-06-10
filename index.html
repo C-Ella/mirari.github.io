@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Mirari&#39;s Blog">
+<meta property="og:url" content="http://mirari.cc/index.html">
+<meta property="og:site_name" content="Mirari&#39;s Blog">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mirari&#39;s Blog">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://mirari.cc/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Mirari's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Mirari's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2018/05/30/内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/05/30/内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题/" class="post-title-link" itemprop="url">内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-05-30 16:15:07" itemprop="dateCreated datePublished" datetime="2018-05-30T16:15:07+08:00">2018-05-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-31 11:30:26" itemprop="dateModified" datetime="2018-05-31T11:30:26+08:00">2018-05-31</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2018/05/30/内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/05/30/内嵌iframe页面在IOS下会受内部元素影响自动撑开的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>IOS下的webview页面，内嵌iframe元素，将其样式指定为宽高100%：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.iframe</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在安卓下运行均无问题，但是在IOS下会出现异常。</p>
+<p>具体表现为iframe页面内的子元素一旦超出原先的边界，只要能影响到html元素的宽高，就会自动撑开iframe，即使html元素设置了<code>overflow:hidden</code>也没用。<br>比如一个body元素下的弹层需要从下往上滑动进场，这个弹层的位置就会导致html高度的变化，因此页面底部的tabbar就会在弹层运动期间先消失再出现。</p>
+<p>解决方法就是使用具体的宽高数值锁定iframe元素：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onLoadIFrame</span> (<span class="params">index</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 修复IOS下轮播图初始化瞬间会让iframe宽度自行扩大问题</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">this</span>.ENV.isIOS) &#123;</span><br><span class="line">    <span class="keyword">const</span> iframe = <span class="keyword">this</span>.$el.querySelector(<span class="string">'#iframe'</span> + index)</span><br><span class="line">    iframe.style.width = iframe.clientWidth + <span class="string">'px'</span></span><br><span class="line">    iframe.style.height = iframe.clientHeight + <span class="string">'px'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2018/04/17/babel-preset-env无法确保ES6的for-of语法兼容性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/04/17/babel-preset-env无法确保ES6的for-of语法兼容性/" class="post-title-link" itemprop="url">babel-preset-env无法确保ES6的for..of语法兼容性</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-17 16:42:35 / 修改时间：17:57:52" itemprop="dateCreated datePublished" datetime="2018-04-17T16:42:35+08:00">2018-04-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2018/04/17/babel-preset-env无法确保ES6的for-of语法兼容性/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/17/babel-preset-env无法确保ES6的for-of语法兼容性/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><code>babel-preset-env</code>是现在最主流的babel解决方案，但是前阵子踩到了一个坑。<br>部分机型在执行到ES6的<code>for of</code>语句时就会报错。</p>
+<p>原因有两个。</p>
+<p>一是<code>babel-preset-env</code>默认只转换语法(syntax)，而不会转换全局对象(<code>Iterator</code>、<code>Generator</code>、<code>Set</code>、<code>Maps</code>、<code>Proxy</code>、<code>Reflect</code>、<code>Symbol</code>、<code>Promise</code>等)和全局对象上的新增方法（<code>Object.assign</code>等）。</p>
+<p>二是<code>for of</code>会被babel编译，编译之后其中会出现Symbol关键字。</p>
+<p>所以表面上看<code>for of</code>似乎可以使用，但实际上涉及到了新全局对象，从而导致不支持<code>Symbol</code>的浏览器报错。</p>
+<p>因此，<code>babel-preset-env</code>并不像宣传(<code>你需要的唯一Babel插件</code>)描述的那样简单，它仍旧离不开那个笨重但好用的<code>babel-polyfill</code>。</p>
+<p>最终的解决方案是在<code>.babelrc</code>中的<code>env</code>下添加<code>useBuiltIns</code>属性, 值为<code>entry</code>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&quot;presets&quot;: [</span><br><span class="line">    [&quot;env&quot;, &#123;</span><br><span class="line">      &quot;modules&quot;: false,</span><br><span class="line">      &quot;useBuiltIns&quot;: &quot;entry&quot;</span><br><span class="line">    &#125;]</span><br><span class="line">  ],</span><br></pre></td></tr></table></figure></p>
+<p>并在项目的主入口顶部添加:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &apos;babel-polyfill&apos;</span><br></pre></td></tr></table></figure></p>
+<p>这样env会自动精简没有使用到的polyfill，比单纯直接引入polyfill要小一些。</p>
+<p><code>useBuiltIns</code>还可以设置为<code>usage</code>，也就是在未兼容的环境使用新对象或方法时在当前脚本顶部自动添加polyfill。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/" class="post-title-link" itemprop="url">windows环境下无法提交gh-pages、无法发布npm包的问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-04-17 10:47:47 / 修改时间：16:45:56" itemprop="dateCreated datePublished" datetime="2018-04-17T10:47:47+08:00">2018-04-17</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以下问题均出现在windows环境，使用IntelliJ IDEA中的npm选项卡双击执行命令时。</p>
+<p>使用npm的gh-pages工具包，可以很方便地一键发布指定目录到项目的gh-pages分支。<br>以前用着好好的，但是最近使用的时候，忽然发现以下报错信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">No such device or address: &apos;/dev/tty&apos;</span><br><span class="line">fatal: could not read Username for &apos;https://github.com&apos;: No error</span><br></pre></td></tr></table></figure></p>
+<p>网上搜到类似的问题都是hexo的发布，但这里并不像hexo一样用到config.yml，流传的处理方式也只是治标不治本（暴露了账号密码到配置文件中）。<br>关键问题还是执行过程中出现了windows不支持的语句。<br>最终处理方式是，重新安装git for windows，在安装过程这一步选择第二项：<br><img src="/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/1.png"></p>
+<p>这样可以使cmd支持git命令。应该是之前手贱升级git的时候点错了。</p>
+<p>随后尝试一键发布到npm仓库时又出现了如下错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> Error: EPERM: operation not permitted, unlink &apos;...\Temp\npm-xxxxx-xxxxxxxx\tmp\fromDir-xxxxxxxx\package.tgz&apos;</span><br><span class="line">npm ERR!        at Error (native)</span><br></pre></td></tr></table></figure></p>
+<p>解决方式是打开Idea设置，找到<code>Node.js and npm</code>，将Package Manager从yarn改为npm。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/" class="post-title-link" itemprop="url">Chrome升级到版本61后出现偏色问题的解决方法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-09-11 14:47:49 / 修改时间：15:03:21" itemprop="dateCreated datePublished" datetime="2017-09-11T14:47:49+08:00">2017-09-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/好人修电脑/" itemprop="url" rel="index"><span itemprop="name">好人修电脑</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。<br>不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。<br>如图：</p>
+<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/1.jpg">
+<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/2.png">
+<p>操作系统是win10 x64，浏览器是chrome 61 x64。</p>
+<p>去google了一下发现是普遍现象，解决方法如下：</p>
+<ol>
+<li>在chrome地址栏输入<code>chrome://flags/</code></li>
+<li>找到配置项<code>Color correct rendering</code>，将其禁用并重启浏览器即可。</li>
+</ol>
+<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/4.png">
+<p>经验证问题已解决。</p>
+<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/3.png">
+<p>据说先行版本63没有此问题，也许后续版本中会修复，到时候可以将设置恢复默认。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/09/08/使用相对路径发布vue-cli项目的坑/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/09/08/使用相对路径发布vue-cli项目的坑/" class="post-title-link" itemprop="url">使用相对路径发布vue-cli项目的坑</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-09-08 16:21:07 / 修改时间：17:50:51" itemprop="dateCreated datePublished" datetime="2017-09-08T16:21:07+08:00">2017-09-08</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/09/08/使用相对路径发布vue-cli项目的坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/08/使用相对路径发布vue-cli项目的坑/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用vue-cli可以快速创建一个webpack项目脚手架，有相当多的项目都使用了相似的配置。<br>它们对发布环境的配置差不多是这样的：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  build: &#123;</span><br><span class="line">    env: <span class="built_in">require</span>(<span class="string">'./prod.env'</span>),</span><br><span class="line">    index: path.resolve(__dirname, <span class="string">'../dist/index.html'</span>),</span><br><span class="line">    assetsRoot: path.resolve(__dirname, <span class="string">'../dist'</span>),</span><br><span class="line">    assetsSubDirectory: <span class="string">'assets'</span>,</span><br><span class="line">    assetsPublicPath: <span class="string">'/'</span>,</span><br><span class="line">    productionSourceMap: <span class="literal">false</span>,</span><br><span class="line">    <span class="comment">// Gzip off by default as many popular static hosts such as</span></span><br><span class="line">    <span class="comment">// Surge or Netlify already gzip all static assets for you.</span></span><br><span class="line">    <span class="comment">// Before setting to `true`, make sure to:</span></span><br><span class="line">    <span class="comment">// npm install --save-dev compression-webpack-plugin</span></span><br><span class="line">    productionGzip: <span class="literal">false</span>,</span><br><span class="line">    productionGzipExtensions: [<span class="string">'js'</span>, <span class="string">'css'</span>]</span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这种配置只能通过根路径访问，比如<code>http://project.example.com/</code>。</p>
+<p>如果这个项目发布的内网地址是<code>http://192.168.1.101/project/</code>，那么它实际上是无法被直接访问的，所有js、css等资源的引用地址全部会出错。</p>
+<p>从调试器中可以看到这些URL全都是写死成从根路径开始的。</p>
+<p>而如果想要以<code>http://www.example.com/project/</code>来访问项目，就只有将<code>assetsPublicPath</code>修改成<code>&#39;/project/&#39;&#39;</code>并重新编译打包发布。</p>
+<p>显然这种做法相当不灵活。</p>
+<p>理想的做法是将项目以相对路径形式发布，无论它位于什么层级，都可以以相对路径的方式请求到引用的资源。</p>
+<p>很多教程都是这么教的：</p>
+<blockquote>
+<p>只要把根目录改为相对目录就好了<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">assetsPublicPath: <span class="string">'./'</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>如果只是拿脚手架做点练习，这样做也许可以。</p>
+<p>但只要你的项目有CSS引用了图片或者字体，并且它们会被归类到各自的目录，光是修改assetsPublicPath是不够的，会遇到这样的问题：</p>
+<img src="/2017/09/08/使用相对路径发布vue-cli项目的坑/snipaste20170908_165246.png">
+<p>如果项目中用到了Bootstrap或者FontAwesome之类的工具，那这个坑是必然绕不过去的。</p>
+<p>完美的解决方法是在cssLoaders中为CSS单独配置publicPath：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (options.extract) &#123;</span><br><span class="line">      <span class="keyword">return</span> ExtractTextPlugin.extract(&#123;</span><br><span class="line">        use: sourceLoader,</span><br><span class="line">        fallback: <span class="string">'vue-style-loader'</span>,</span><br><span class="line">        publicPath: <span class="string">'../../'</span></span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>我的输出目录是dist &gt; index.html + assets &gt; css + fonts + img + js，因此publicPath需要向上返回两级，可根据实际项目配置修改它的值。</p>
+<p>步骤总结：</p>
+<ol>
+<li><p>在<code>config/index.js</code>中，将<code>assetsPublicPath</code>修改为<code>./</code></p>
+</li>
+<li><p>在<code>build/utils.js</code>中，找到<code>ExtractTextPlugin.extract</code>，添加配置项<code>publicPath: &#39;../../&#39;</code></p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作/" class="post-title-link" itemprop="url">Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-08-27 02:13:35" itemprop="dateCreated datePublished" datetime="2017-08-27T02:13:35+08:00">2017-08-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-10 16:42:56" itemprop="dateModified" datetime="2018-08-10T16:42:56+08:00">2018-08-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/项目/" itemprop="url" rel="index"><span itemprop="name">项目</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/项目/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="v-viewer"><a href="#v-viewer" class="headerlink" title="v-viewer"></a>v-viewer</h1><p>用于图片浏览的Vue组件，支持旋转、缩放、翻转等操作，基于<a href="https://github.com/fengyuanchen/viewerjs" target="_blank" rel="noopener">viewer.js</a>。</p>
+<p><a href="https://badge.fury.io/js/v-viewer" target="_blank" rel="noopener"><img src="https://badge.fury.io/js/v-viewer.svg" alt="npm version"></a></p>
+<h2 id="在线演示"><a href="#在线演示" class="headerlink" title="在线演示"></a><a href="https://mirari.github.io/v-viewer/" target="_blank" rel="noopener">在线演示</a></h2><h2 id="CodePen用例"><a href="#CodePen用例" class="headerlink" title="CodePen用例"></a><a href="https://codepen.io/mirari/pen/PePrVq" target="_blank" rel="noopener">CodePen用例</a></h2><h2 id="从0-x迁移"><a href="#从0-x迁移" class="headerlink" title="从0.x迁移"></a>从0.x迁移</h2><p>你需要做的唯一改动就是手动引入样式文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &apos;viewerjs/dist/viewer.css&apos;</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用npm命令安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install v-viewer</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>引入<code>v-viewer</code>及必需的css样式，并使用<code>Vue.use()</code>注册插件，之后即可使用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- directive --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"images"</span> <span class="attr">v-viewer</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"1.jpg"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"2.jpg"</span>&gt;</span></span><br><span class="line">      ...</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- component --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">viewer</span> <span class="attr">:images</span>=<span class="string">"images"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">v-for</span>=<span class="string">"src in images"</span> <span class="attr">:src</span>=<span class="string">"src"</span> <span class="attr">:key</span>=<span class="string">"src"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">viewer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import 'viewerjs/dist/viewer.css'</span><br><span class="line">  import Viewer from 'v-viewer'</span><br><span class="line">  import Vue from 'vue'</span><br><span class="line">  Vue.use(Viewer)</span><br><span class="line">  export default &#123;</span><br><span class="line">    data() &#123;</span><br><span class="line">      images: ['1.jpg', '2.jpg']</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="以指令形式使用"><a href="#以指令形式使用" class="headerlink" title="以指令形式使用"></a>以指令形式使用</h3><p>只需要将<code>v-viewer</code>指令添加到任意元素即可，该元素下的所有<code>img</code>元素都会被<code>viewer</code>自动处理。</p>
+<p>你可以像这样传入配置项： <code>v-viewer=&quot;{inline: true}&quot;</code></p>
+<p>如果有必要，可以先用选择器查找到目标元素，然后可以用<code>el.$viewer</code>来获取<code>viewer</code>实例。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"images"</span> <span class="attr">v-viewer</span>=<span class="string">"&#123;movable: false&#125;"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">v-for</span>=<span class="string">"src in images"</span> <span class="attr">:src</span>=<span class="string">"src"</span> <span class="attr">:key</span>=<span class="string">"src"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"show"</span>&gt;</span>Show<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import 'viewerjs/dist/viewer.css'</span><br><span class="line">  import Viewer from 'v-viewer'</span><br><span class="line">  import Vue from 'vue'</span><br><span class="line">  Vue.use(Viewer)</span><br><span class="line">  export default &#123;</span><br><span class="line">    data() &#123;</span><br><span class="line">      images: ['1.jpg', '2.jpg']</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      show () &#123;</span><br><span class="line">        const viewer = this.$el.querySelector('.images').$viewer</span><br><span class="line">        viewer.show()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="指令修饰器"><a href="#指令修饰器" class="headerlink" title="指令修饰器"></a>指令修饰器</h4><h5 id="static"><a href="#static" class="headerlink" title="static"></a>static</h5><p>添加修饰器后，<code>viewer</code>的创建只会在元素绑定指令时执行一次。<br>如果你确定元素内的图片不会再发生变化，使用它可以避免不必要的重建动作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;images&quot; v-viewer.static=&quot;&#123;inline: true&#125;&quot;&gt;</span><br><span class="line">  &lt;img v-for=&quot;src in images&quot; :src=&quot;src&quot; :key=&quot;src&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="以组件形式使用"><a href="#以组件形式使用" class="headerlink" title="以组件形式使用"></a>以组件形式使用</h3><p>你也可以单独引入全屏组件并局部注册它。</p>
+<p>使用<a href="https://cn.vuejs.org/v2/guide/components.html#作用域插槽" target="_blank" rel="noopener">作用域插槽</a>来定制你的图片展示方式。</p>
+<p>监听<code>inited</code>事件来获取<code>viewer</code>实例，或者也可以用<code>this.refs.xxx.$viewer</code>这种方法。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">viewer</span> <span class="attr">:options</span>=<span class="string">"options"</span> <span class="attr">:images</span>=<span class="string">"images"</span></span></span><br><span class="line"><span class="tag">            @<span class="attr">inited</span>=<span class="string">"inited"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">class</span>=<span class="string">"viewer"</span> <span class="attr">ref</span>=<span class="string">"viewer"</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">scope</span>=<span class="string">"scope"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">v-for</span>=<span class="string">"src in scope.images"</span> <span class="attr">:src</span>=<span class="string">"src"</span> <span class="attr">:key</span>=<span class="string">"src"</span>&gt;</span></span><br><span class="line">        &#123;&#123;scope.options&#125;&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">viewer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"show"</span>&gt;</span>Show<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import 'viewerjs/dist/viewer.css'</span><br><span class="line">  import Viewer from "v-viewer/src/component.vue"</span><br><span class="line">  export default &#123;</span><br><span class="line">    components: &#123;</span><br><span class="line">      Viewer</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      images: ['1.jpg', '2.jpg']</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      inited (viewer) &#123;</span><br><span class="line">        this.$viewer = viewer</span><br><span class="line">      &#125;,</span><br><span class="line">      show () &#123;</span><br><span class="line">        this.$viewer.show()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置项-amp-方法"><a href="#配置项-amp-方法" class="headerlink" title="配置项 &amp; 方法"></a>配置项 &amp; 方法</h2><p>请参考<a href="https://github.com/fengyuanchen/viewerjs" target="_blank" rel="noopener">viewer.js</a>.</p>
+<h2 id="插件配置项"><a href="#插件配置项" class="headerlink" title="插件配置项"></a>插件配置项</h2><h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><ul>
+<li>Type: <code>String</code></li>
+<li>Default: <code>viewer</code></li>
+</ul>
+<p>如果你需要避免重名冲突，可以像这样引入:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"images"</span> <span class="attr">v-vuer</span>=<span class="string">"&#123;movable: false&#125;"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">v-for</span>=<span class="string">"src in images"</span> <span class="attr">:src</span>=<span class="string">"src"</span> <span class="attr">:key</span>=<span class="string">"src"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"show"</span>&gt;</span>Show<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import 'viewerjs/dist/viewer.css'</span><br><span class="line">  import Vuer from 'v-viewer'</span><br><span class="line">  import Vue from 'vue'</span><br><span class="line">  Vue.use(Vuer, &#123;name: 'vuer'&#125;)</span><br><span class="line">  export default &#123;</span><br><span class="line">    data() &#123;</span><br><span class="line">      images: ['1.jpg', '2.jpg']</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      show () &#123;</span><br><span class="line">        const vuer = this.$el.querySelector('.images').$vuer</span><br><span class="line">        vuer.show()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="defaultOptions"><a href="#defaultOptions" class="headerlink" title="defaultOptions"></a>defaultOptions</h3><ul>
+<li>Type: <code>Object</code></li>
+<li>Default: <code>undefined</code></li>
+</ul>
+<p>如果你需要修改viewer.js的全局默认配置项，可以像这样引入：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Viewer <span class="keyword">from</span> <span class="string">'v-viewer'</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line">Vue.use(Viewer, &#123;</span><br><span class="line">  defaultOptions: &#123;</span><br><span class="line">    zIndex: <span class="number">9999</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>你还可以在任何时候像这样修改全局默认配置项：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Viewer <span class="keyword">from</span> <span class="string">'v-viewer'</span></span><br><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line">Vue.use(Viewer)</span><br><span class="line">Viewer.setDefaults(&#123;</span><br><span class="line">  zIndexInline: <span class="number">2017</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/14/全屏切换组件vue-fullscreen/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/14/全屏切换组件vue-fullscreen/" class="post-title-link" itemprop="url">全屏切换组件vue-fullscreen</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-08-14 23:57:33" itemprop="dateCreated datePublished" datetime="2017-08-14T23:57:33+08:00">2017-08-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-05-31 11:29:36" itemprop="dateModified" datetime="2018-05-31T11:29:36+08:00">2018-05-31</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/项目/" itemprop="url" rel="index"><span itemprop="name">项目</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/项目/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/08/14/全屏切换组件vue-fullscreen/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/14/全屏切换组件vue-fullscreen/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="vue-fullscreen"><a href="#vue-fullscreen" class="headerlink" title="vue-fullscreen"></a>vue-fullscreen</h1><p>一个用于将任意页面元素进行全屏切换的vue组件</p>
+<p><a href="https://badge.fury.io/js/vue-fullscreen" target="_blank" rel="noopener"><img src="https://badge.fury.io/js/vue-fullscreen.svg" alt="npm version"></a></p>
+<h2 id="在线演示"><a href="#在线演示" class="headerlink" title="在线演示"></a><a href="http://mirari.github.io/vue-fullscreen/" target="_blank" rel="noopener">在线演示</a></h2><h2 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h2><ul>
+<li><a href="https://codepen.io/mirari/pen/LmJRxK" target="_blank" rel="noopener">与v-for结合使用</a></li>
+<li><a href="https://codepen.io/mirari/pen/vjzXJN" target="_blank" rel="noopener">与弹层结合使用</a></li>
+</ul>
+<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><p><a href="http://caniuse.com/fullscreen" target="_blank" rel="noopener">Full Screen API</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>使用npm命令安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vue-fullscreen</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>引入<code>vue-fullscreen</code>，并使用<code>Vue.use()</code>注册插件，之后即可使用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fullscreen</span> <span class="attr">ref</span>=<span class="string">"fullscreen"</span> @<span class="attr">change</span>=<span class="string">"fullscreenChange"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fullscreen</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--  deprecated</span></span><br><span class="line"><span class="comment">      &lt;fullscreen :fullscreen.sync="fullscreen"&gt;</span></span><br><span class="line"><span class="comment">        Content</span></span><br><span class="line"><span class="comment">      &lt;/fullscreen&gt;</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import fullscreen from 'vue-fullscreen'</span><br><span class="line">  import Vue from 'vue'</span><br><span class="line">  Vue.use(fullscreen)</span><br><span class="line">  export default &#123;</span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggle () &#123;</span><br><span class="line">        this.$refs['fullscreen'].toggle() // recommended</span><br><span class="line">        // this.fullscreen = !this.fullscreen // deprecated</span><br><span class="line">      &#125;,</span><br><span class="line">      fullscreenChange (fullscreen) &#123;</span><br><span class="line">        this.fullscreen = fullscreen</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        fullscreen: false</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意:</strong> 由于浏览器的安全限制，全屏切换必须由一个用户操作事件发起，比如<code>click</code>或<code>keypress</code>。</p>
+<p><strong>注意:</strong> 因为watch回调现在只能异步执行，浏览器会拦截后续动作。我建议通过<code>refs</code>获取组件后直接调用其方法，而不要像旧版本那样修改传递给它的属性。</p>
+<h2 id="以插件形式使用"><a href="#以插件形式使用" class="headerlink" title="以插件形式使用"></a>以插件形式使用</h2><p>在Vue组件实例中，可以直接调用<code>this.$fullscreen</code>来获取全屏组件实例。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"example"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">import fullscreen from 'vue-fullscreen'</span><br><span class="line">import Vue from 'vue'</span><br><span class="line">Vue.use(fullscreen)</span><br><span class="line">export default &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    toggle () &#123;</span><br><span class="line">      this.$fullscreen.toggle(this.$el.querySelector('.example'), &#123;</span><br><span class="line">        wrap: false,</span><br><span class="line">        callback: this.fullscreenChange</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">    fullscreenChange (fullscreen) &#123;</span><br><span class="line">      this.fullscreen = fullscreen</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      fullscreen: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h4 id="toggle-target-options-force"><a href="#toggle-target-options-force" class="headerlink" title="toggle([target, options, force])"></a>toggle([target, options, force])</h4><p>切换全屏模式。</p>
+<ul>
+<li><strong>target</strong>:<ul>
+<li>类型: <code>Element</code></li>
+<li>默认值: <code>document.body</code></li>
+<li>全屏操作的目标元素。</li>
+</ul>
+</li>
+<li><strong>options</strong> (可选):<ul>
+<li>类型: <code>Object</code></li>
+<li>配置项，详见下文。</li>
+</ul>
+</li>
+<li><strong>force</strong> (可选):<ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>undefined</code></li>
+<li>传入<code>true</code>可以指定进入全屏模式，效果与<code>enter</code>方法相同，<code>false</code>反之。</li>
+</ul>
+</li>
+</ul>
+<h4 id="enter-target-options"><a href="#enter-target-options" class="headerlink" title="enter([target, options])"></a>enter([target, options])</h4><p>进入全屏模式。</p>
+<ul>
+<li><strong>target</strong>:<ul>
+<li>类型: <code>Element</code></li>
+<li>默认值: <code>document.body</code></li>
+<li>全屏操作的目标元素。</li>
+</ul>
+</li>
+<li><strong>options</strong> (可选):<ul>
+<li>类型: <code>Object</code></li>
+<li>配置项，详见下文。</li>
+</ul>
+</li>
+</ul>
+<h4 id="exit"><a href="#exit" class="headerlink" title="exit()"></a>exit()</h4><p>退出全屏模式。</p>
+<h3 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h3><h3 id="callback"><a href="#callback" class="headerlink" title="callback"></a>callback</h3><ul>
+<li>类型: <code>Function</code></li>
+<li>默认值: <code>null</code></li>
+</ul>
+<p>当全屏状态变更时执行。</p>
+<h3 id="fullscreenClass"><a href="#fullscreenClass" class="headerlink" title="fullscreenClass"></a>fullscreenClass</h3><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>fullscreen</code></li>
+</ul>
+<p>这个样式会在进入全屏状态时被添加到目标元素上。</p>
+<h3 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h3><ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>true</code></li>
+</ul>
+<p>如果设置为<code>true</code>，在进入全屏状态时目标元素会被一个<code>div</code>包裹, 你可以指定它的背景样式。</p>
+<h3 id="background"><a href="#background" class="headerlink" title="background"></a>background</h3><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>#333</code></li>
+</ul>
+<p>包裹元素的背景样式，只有在<code>wrap</code>为true且进入全屏时有效。</p>
+<h2 id="以组件形式使用"><a href="#以组件形式使用" class="headerlink" title="以组件形式使用"></a>以组件形式使用</h2><p> 你可以单独引入全屏组件并局部注册它。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fullscreen</span> <span class="attr">ref</span>=<span class="string">"fullscreen"</span> @<span class="attr">change</span>=<span class="string">"fullscreenChange"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fullscreen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  import Fullscreen from "vue-fullscreen/src/component.vue"</span><br><span class="line">  export default &#123;</span><br><span class="line">    components: &#123;Fullscreen&#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">      toggle () &#123;</span><br><span class="line">        this.$refs['fullscreen'].toggle()</span><br><span class="line">      &#125;,</span><br><span class="line">      fullscreenChange (fullscreen) &#123;</span><br><span class="line">        this.fullscreen = fullscreen</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    data() &#123;</span><br><span class="line">      return &#123;</span><br><span class="line">        fullscreen: false</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="方法-1"><a href="#方法-1" class="headerlink" title="方法"></a>方法</h3><h4 id="toggle-force"><a href="#toggle-force" class="headerlink" title="toggle([force])"></a>toggle([force])</h4><p>切换全屏模式。</p>
+<ul>
+<li><strong>force</strong> (可选):<ul>
+<li>类型: <code>Boolean</code></li>
+<li>默认值: <code>undefined</code></li>
+<li>传入<code>true</code>可以指定进入全屏模式，效果与<code>enter</code>方法相同，<code>false</code>反之。</li>
+</ul>
+</li>
+</ul>
+<h4 id="enter"><a href="#enter" class="headerlink" title="enter()"></a>enter()</h4><p>进入全屏模式。</p>
+<h4 id="exit-1"><a href="#exit-1" class="headerlink" title="exit"></a>exit</h4><p>退出全屏模式。</p>
+<h3 id="Props属性"><a href="#Props属性" class="headerlink" title="Props属性"></a>Props属性</h3><h4 id="fullscreenClass-1"><a href="#fullscreenClass-1" class="headerlink" title="fullscreenClass"></a>fullscreenClass</h4><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>fullscreen</code></li>
+</ul>
+<p>全屏组件的样式类，只有全屏时才生效。</p>
+<h4 id="background-1"><a href="#background-1" class="headerlink" title="background"></a>background</h4><ul>
+<li>类型: <code>String</code></li>
+<li>默认值: <code>#333</code></li>
+</ul>
+<p>全屏组件的背景样式，只有全屏时才生效。</p>
+<h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><h4 id="change"><a href="#change" class="headerlink" title="change"></a>change</h4><ul>
+<li><strong>isFullscreen</strong>:  当前的全屏状态。</li>
+</ul>
+<p>在全屏状态改变时触发</p>
+<h2 id="避免重名冲突"><a href="#避免重名冲突" class="headerlink" title="避免重名冲突"></a>避免重名冲突</h2><p>如果你需要避免重名冲突，可以像这样引入:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fs</span> <span class="attr">ref</span>=<span class="string">"fullscreen"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">fs</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"example"</span>&gt;</span></span><br><span class="line">      Content</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> @<span class="attr">click</span>=<span class="string">"toggle"</span> &gt;</span>Fullscreen<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">import Fullscreen from 'vue-fullscreen'</span><br><span class="line">import Vue from 'vue'</span><br><span class="line">Vue.use(Fullscreen, &#123;name: 'fs'&#125;)</span><br><span class="line">export default &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    toggle () &#123;</span><br><span class="line">      this.$refs['fullscreen'].toggle()</span><br><span class="line">      this.$fs.toggle(this.$el.querySelector('.example'), &#123;</span><br><span class="line">        wrap: false,</span><br><span class="line">        callback: this.fullscreenChange</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">    fullscreenChange (fullscreen) &#123;</span><br><span class="line">      this.fullscreen = fullscreen</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      fullscreen: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/14/列表元素无内容时高度为0导致串行的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/14/列表元素无内容时高度为0导致串行的问题/" class="post-title-link" itemprop="url">列表元素无内容时高度为0导致串行的问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-08-14 22:01:04" itemprop="dateCreated datePublished" datetime="2017-08-14T22:01:04+08:00">2017-08-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-08-15 09:50:45" itemprop="dateModified" datetime="2017-08-15T09:50:45+08:00">2017-08-15</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/08/14/列表元素无内容时高度为0导致串行的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/14/列表元素无内容时高度为0导致串行的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用<code>dl</code>元素。<br>比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/1/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>可以看到一个问题，当某些数据没有值时，它所在的dd元素高度会变成0，结果下面行的数据会顶上来，造成串行。</p>
+<p>一种笨办法是在数据渲染时强制给所有<code>dd</code>元素一个<code>&amp;nbsp;</code>,利用空格强行撑开元素高度。但是这种做法会影响页面处理逻辑，既麻烦又不整洁。</p>
+<p>另一种做法是修改对齐方式：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/2/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>表面上看是解决了问题，但是当缩小浏览器，使内容过长超出页面宽度导致换行时，就可以发现内容的文字跑到了标题那边，对强迫症来说很难受。</p>
+<p>最完美的做法是使用CSS伪类为元素添加内容：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/3/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>伪类的content属性如果填的是<code>&#39;&#39;</code>或者<code>&amp;nbsp;</code>都会被忽略，无法生效。所以这里用的是Unicode的零宽无连接符。<code>\200c</code>和<code>\200d</code>分别是零宽无连接符和零宽连接符，分别用于阻止本来会连接的前后两个字符和强行合并本来不会连接的前后两个字符。它们的附加特性非常适合用在这种需要有字符但又希望它看不到的场合。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Mirari">
+            
+              <p class="site-author-name" itemprop="name">Mirari</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/mirari" title="GitHub &rarr; https://github.com/mirari" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mirari</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.2"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'PIjXtxRhVtNErChUJIMq8APR',
+    appKey: '6MKibCkAhd6hFf2s81MRYMd2',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
