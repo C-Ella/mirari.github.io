@@ -96,23 +96,18 @@
 
 
 
-  <meta name="description" content="9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。如图：   操作系统是win10 x64，浏览器是chrome 61 x64。 去google了一下发现是普遍现象，解决方法如下：  在chrome地址栏输入chrome://flags/ 找到配置项Color correct renderi">
-<meta name="keywords" content="chrome,好人修电脑">
+  <meta name="description" content="最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉性能表现可能不会太好。也有一些用CSS动画的方案，设计了加速-匀速-减速三个动画，再计算偏转角度让三个动画尽可能无缝衔接，但我感觉绕了大远路，应该有更简单轻量的实现方案。个人更倾向于用transiti">
+<meta name="keywords" content="Vue,CSS3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chrome升级到版本61后出现偏色问题的解决方法">
-<meta property="og:url" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/index.html">
+<meta property="og:title" content="CSS3实现转盘抽奖">
+<meta property="og:url" content="http://mirari.cc/2019/06/25/CSS3实现转盘抽奖/index.html">
 <meta property="og:site_name" content="Mirari&#39;s Blog">
-<meta property="og:description" content="9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。如图：   操作系统是win10 x64，浏览器是chrome 61 x64。 去google了一下发现是普遍现象，解决方法如下：  在chrome地址栏输入chrome://flags/ 找到配置项Color correct renderi">
+<meta property="og:description" content="最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉性能表现可能不会太好。也有一些用CSS动画的方案，设计了加速-匀速-减速三个动画，再计算偏转角度让三个动画尽可能无缝衔接，但我感觉绕了大远路，应该有更简单轻量的实现方案。个人更倾向于用transiti">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/1.jpg">
-<meta property="og:image" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/2.png">
-<meta property="og:image" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/4.png">
-<meta property="og:image" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/3.png">
-<meta property="og:updated_time" content="2017-09-11T07:03:21.923Z">
+<meta property="og:updated_time" content="2019-06-25T05:59:34.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chrome升级到版本61后出现偏色问题的解决方法">
-<meta name="twitter:description" content="9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。如图：   操作系统是win10 x64，浏览器是chrome 61 x64。 去google了一下发现是普遍现象，解决方法如下：  在chrome地址栏输入chrome://flags/ 找到配置项Color correct renderi">
-<meta name="twitter:image" content="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/1.jpg">
+<meta name="twitter:title" content="CSS3实现转盘抽奖">
+<meta name="twitter:description" content="最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉性能表现可能不会太好。也有一些用CSS动画的方案，设计了加速-匀速-减速三个动画，再计算偏转角度让三个动画尽可能无缝衔接，但我感觉绕了大远路，应该有更简单轻量的实现方案。个人更倾向于用transiti">
 
 
 
@@ -120,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/">
+  <link rel="canonical" href="http://mirari.cc/2019/06/25/CSS3实现转盘抽奖/">
 
 
 
@@ -130,7 +125,7 @@
   };
 </script>
 
-  <title>Chrome升级到版本61后出现偏色问题的解决方法 | Mirari's Blog</title>
+  <title>CSS3实现转盘抽奖 | Mirari's Blog</title>
   
 
 
@@ -329,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2019/06/25/CSS3实现转盘抽奖/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mirari">
@@ -346,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Chrome升级到版本61后出现偏色问题的解决方法
+          <h1 class="post-title" itemprop="name headline">CSS3实现转盘抽奖
 
               
             
@@ -372,7 +367,7 @@
                 
               
 
-              <time title="创建时间：2017-09-11 14:47:49 / 修改时间：15:03:21" itemprop="dateCreated datePublished" datetime="2017-09-11T14:47:49+08:00">2017-09-11</time>
+              <time title="创建时间：2019-06-25 11:11:20 / 修改时间：13:59:34" itemprop="dateCreated datePublished" datetime="2019-06-25T11:11:20+08:00">2019-06-25</time>
             
 
             
@@ -394,7 +389,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/好人修电脑/" itemprop="url" rel="index"><span itemprop="name">好人修电脑</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Vue/" itemprop="url" rel="index"><span itemprop="name">Vue</span></a></span>
 
                 
                 
@@ -413,8 +408,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/" itemprop="commentCount"></span>
+                <a href="/2019/06/25/CSS3实现转盘抽奖/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/25/CSS3实现转盘抽奖/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -449,20 +444,8 @@
       
 
       
-        <p>9月初Chrome发布了最新的正式版，版本号61，升级以后却发现所有网页都变成了奶白清新配色。<br>不管CSS原本设置是什么颜色，最终显示效果都会比设置得更白一些。<br>如图：</p>
-<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/1.jpg">
-<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/2.png">
-<p>操作系统是win10 x64，浏览器是chrome 61 x64。</p>
-<p>去google了一下发现是普遍现象，解决方法如下：</p>
-<ol>
-<li>在chrome地址栏输入<code>chrome://flags/</code></li>
-<li>找到配置项<code>Color correct rendering</code>，将其禁用并重启浏览器即可。</li>
-</ol>
-<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/4.png">
-<p>经验证问题已解决。</p>
-<img src="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/3.png">
-<p>据说先行版本63没有此问题，也许后续版本中会修复，到时候可以将设置恢复默认。</p>
-
+        <p>最近有个转盘抽奖的需求，搜了一下现有的轮子，有的是用jQuery的动画函数实现的，有的是用canvas绘图然后再用高频率的setTimeout调用旋转方法，前者太老了没法简单移植到vue项目，后者感觉性能表现可能不会太好。也有一些用CSS动画的方案，设计了加速-匀速-减速三个动画，再计算偏转角度让三个动画尽可能无缝衔接，但我感觉绕了大远路，应该有更简单轻量的实现方案。个人更倾向于用transition来实现，不过网上的例子感觉还不够好，有的倾斜文字都没有对齐，最后还是自己手写了一个。核心思路是用transition以及rotate实现旋转动画，使用transition-origin和rotate绘制出定位较为精确的轮盘奖项，同时支持动态设置奖品数量。</p>
+<iframe id="cp_embed_XLgBQP" src="//codepen.io/mirari/embed/XLgBQP?height=600&theme-id=dark&slug-hash=XLgBQP&default-tab=js,result&embed-version=2" scrolling="no" frameborder="no" height="600" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
       
     </div>
 
@@ -485,9 +468,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/chrome/" rel="tag"># chrome</a>
+            <a href="/tags/Vue/" rel="tag"># Vue</a>
           
-            <a href="/tags/好人修电脑/" rel="tag"># 好人修电脑</a>
+            <a href="/tags/CSS3/" rel="tag"># CSS3</a>
           
         </div>
       
@@ -500,8 +483,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/08/使用相对路径发布vue-cli项目的坑/" rel="next" title="使用相对路径发布vue-cli项目的坑">
-                <i class="fa fa-chevron-left"></i> 使用相对路径发布vue-cli项目的坑
+              <a href="/2019/06/10/让IDE识别webpack的别名alias/" rel="next" title="让IDE识别webpack的别名alias'@'">
+                <i class="fa fa-chevron-left"></i> 让IDE识别webpack的别名alias'@'
               </a>
             
           </div>
@@ -509,10 +492,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/17/windows环境下无法提交gh-pages、无法发布npm包的问题/" rel="prev" title="windows环境下无法提交gh-pages、无法发布npm包的问题">
-                windows环境下无法提交gh-pages、无法发布npm包的问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
