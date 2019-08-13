@@ -98,7 +98,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Mirari&#39;s Blog">
-<meta property="og:url" content="http://mirari.cc/archives/2017/index.html">
+<meta property="og:url" content="http://mirari.cc/page/2/index.html">
 <meta property="og:site_name" content="Mirari&#39;s Blog">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
 
   
   
-  <link rel="canonical" href="http://mirari.cc/archives/2017/">
+  <link rel="canonical" href="http://mirari.cc/page/2/">
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title>归档 | Mirari's Blog</title>
+  <title>Mirari's Blog</title>
   
 
 
@@ -168,7 +168,8 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,7 +258,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -278,25 +279,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -321,214 +303,206 @@
           
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
 
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mirari.cc/2017/08/14/列表元素无内容时高度为0导致串行的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mirari">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mirari's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/08/14/列表元素无内容时高度为0导致串行的问题/" class="post-title-link" itemprop="url">列表元素无内容时高度为0导致串行的问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-08-14 22:01:04" itemprop="dateCreated datePublished" datetime="2017-08-14T22:01:04+08:00">2017-08-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-08-15 09:50:45" itemprop="dateModified" datetime="2017-08-15T09:50:45+08:00">2017-08-15</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2017/08/14/列表元素无内容时高度为0导致串行的问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/14/列表元素无内容时高度为0导致串行的问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      <span class="archive-page-counter">
-        
-        
+      
+
+      
         
           
-        
-        嗯..! 目前共计 11 篇日志。 继续努力。
-      </span>
-      
+            <p>如果有一组标题-内容形式的数据需要展现，用table感觉太笨重了一些，最符合语义化的做法应该是使用<code>dl</code>元素。<br>比如下面这个例子，展现了一个水平列表，样式定义来自bootstrap：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/1/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>可以看到一个问题，当某些数据没有值时，它所在的dd元素高度会变成0，结果下面行的数据会顶上来，造成串行。</p>
+<p>一种笨办法是在数据渲染时强制给所有<code>dd</code>元素一个<code>&amp;nbsp;</code>,利用空格强行撑开元素高度。但是这种做法会影响页面处理逻辑，既麻烦又不整洁。</p>
+<p>另一种做法是修改对齐方式：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/2/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>表面上看是解决了问题，但是当缩小浏览器，使内容过长超出页面宽度导致换行时，就可以发现内容的文字跑到了标题那边，对强迫症来说很难受。</p>
+<p>最完美的做法是使用CSS伪类为元素添加内容：<br><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/xdf8qzzf/3/embedded/result,css,html/light" frameborder="0" allowfullscreen></iframe></p>
+<p>伪类的content属性如果填的是<code>&#39;&#39;</code>或者<code>&amp;nbsp;</code>都会被忽略，无法生效。所以这里用的是Unicode的零宽无连接符。<code>\200c</code>和<code>\200d</code>分别是零宽无连接符和零宽连接符，分别用于阻止本来会连接的前后两个字符和强行合并本来不会连接的前后两个字符。它们的附加特性非常适合用在这种需要有字符但又希望它看不到的场合。</p>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/09/11/Chrome升级到版本61后出现偏色问题的解决方法/" itemprop="url">
-            
-              <span itemprop="name">Chrome升级到版本61后出现偏色问题的解决方法</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-09-11T14:47:49+08:00" content="2017-09-11">
-          09-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/09/08/使用相对路径发布vue-cli项目的坑/" itemprop="url">
-            
-              <span itemprop="name">使用相对路径发布vue-cli项目的坑</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-09-08T16:21:07+08:00" content="2017-09-08">
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/08/27/Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作/" itemprop="url">
-            
-              <span itemprop="name">Vue图片浏览组件v-viewer，支持旋转、缩放、翻转等操作</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-08-27T02:13:35+08:00" content="2017-08-27">
-          08-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/08/14/全屏切换组件vue-fullscreen/" itemprop="url">
-            
-              <span itemprop="name">全屏切换组件vue-fullscreen</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-08-14T23:57:33+08:00" content="2017-08-14">
-          08-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/08/14/列表元素无内容时高度为0导致串行的问题/" itemprop="url">
-            
-              <span itemprop="name">列表元素无内容时高度为0导致串行的问题</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-08-14T22:01:04+08:00" content="2017-08-14">
-          08-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
 
